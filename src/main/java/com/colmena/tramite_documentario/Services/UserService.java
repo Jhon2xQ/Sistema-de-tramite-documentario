@@ -4,8 +4,8 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.colmena.tramite_documentario.Models.User;
-import com.colmena.tramite_documentario.Repositories.UserRepository;
+import com.colmena.tramite_documentario.Models.Usuario;
+import com.colmena.tramite_documentario.Repositories.UsuarioRepository;
 
 import lombok.RequiredArgsConstructor;
 
@@ -13,13 +13,13 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 
 public class UserService {
-  private final UserRepository userRepository;
+  private final UsuarioRepository userRepository;
 
-  public User getUser(Long id) {
+  public Usuario getUser(Long id) {
     return userRepository.findById(id).orElse(null);
   }
 
-  public List<User> getUsers() {
+  public List<Usuario> getUsers() {
     return userRepository.findAll();
   }
 }
