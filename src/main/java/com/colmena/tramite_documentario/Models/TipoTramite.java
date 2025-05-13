@@ -1,6 +1,8 @@
 package com.colmena.tramite_documentario.Models;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -15,8 +17,9 @@ import lombok.Setter;
 
 public class TipoTramite {
   @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
-  private String nombre;
-  private String grupo;
-  private Double costo;
+  private String name;
+  private String group;
+  private Double cost;
 }
