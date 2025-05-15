@@ -1,4 +1,4 @@
-package com.colmena.tramite_documentario.Models;
+package com.colmena.tramite_documentario.Entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,7 +19,7 @@ import lombok.Setter;
 @Setter
 
 @Table(name = "usuario", schema = "public")
-public class Usuario {
+public class UsuarioEntity {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
@@ -30,9 +30,9 @@ public class Usuario {
 
   @ManyToOne()
   @JoinColumn(name = "persona")
-  private Persona persona;
+  private PersonaEntity persona;
 
   @ManyToOne()
   @JoinColumn(name = "rol")
-  private Rol rol;
+  private RolEntity rol;
 }

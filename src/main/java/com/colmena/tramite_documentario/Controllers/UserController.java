@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import com.colmena.tramite_documentario.Models.Usuario;
+import com.colmena.tramite_documentario.Entities.UsuarioEntity;
 import com.colmena.tramite_documentario.Services.UserService;
 
 import lombok.RequiredArgsConstructor;
@@ -20,7 +20,7 @@ public class UserController {
   private final UserService userService;
 
   @GetMapping()
-  public List<Usuario> getUsers() {
+  public List<UsuarioEntity> getUsers() {
     return userService.getUsers();
   }
 }

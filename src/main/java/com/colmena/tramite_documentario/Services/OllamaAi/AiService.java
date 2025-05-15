@@ -1,4 +1,4 @@
-package com.colmena.tramite_documentario.Services;
+package com.colmena.tramite_documentario.Services.OllamaAi;
 
 import org.springframework.ai.ollama.OllamaChatModel;
 import org.springframework.stereotype.Service;

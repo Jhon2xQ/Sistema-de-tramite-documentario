@@ -1,4 +1,4 @@
-package com.colmena.tramite_documentario.Models;
+package com.colmena.tramite_documentario.Entities;
 
 import java.util.List;
 
@@ -22,7 +22,7 @@ import lombok.Setter;
 @Setter
 
 @Table(name = "persona", schema = "public")
-public class Persona {
+public class PersonaEntity {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
@@ -34,5 +34,5 @@ public class Persona {
 
   @OneToMany(mappedBy = "persona")
   @JsonIgnore
-  private List<Usuario> user;
+  private List<UsuarioEntity> user;
 }
