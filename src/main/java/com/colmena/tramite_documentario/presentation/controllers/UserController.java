@@ -1,11 +1,11 @@
-package com.colmena.tramite_documentario.presentation.Controllers;
+package com.colmena.tramite_documentario.presentation.controllers;
 
 import java.util.List;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import com.colmena.tramite_documentario.application.Services.UserService;
-import com.colmena.tramite_documentario.domain.Entities.UsuarioEntity;
+import com.colmena.tramite_documentario.application.services.UserService;
+import com.colmena.tramite_documentario.domain.entities.UsuarioEntity;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;

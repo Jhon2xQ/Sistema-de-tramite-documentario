@@ -1,4 +1,4 @@
-package com.colmena.tramite_documentario.application.Services;
+package com.colmena.tramite_documentario.application.services;
 
 import java.util.Date;
 
@@ -6,9 +6,9 @@ import org.json.JSONObject;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.colmena.tramite_documentario.application.Services.IPFSCluster.IPFSClusterService;
-import com.colmena.tramite_documentario.domain.Entities.DocumentoEntity;
-import com.colmena.tramite_documentario.domain.Repositories.DocumentoRepository;
+import com.colmena.tramite_documentario.domain.entities.DocumentoEntity;
+import com.colmena.tramite_documentario.domain.repositories.DocumentoRepository;
+import com.colmena.tramite_documentario.infrastructure.services.IPFSCluster.IPFSClusterService;
 
 import lombok.RequiredArgsConstructor;
 @Service

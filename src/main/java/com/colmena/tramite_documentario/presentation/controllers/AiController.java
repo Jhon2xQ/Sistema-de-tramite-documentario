@@ -1,11 +1,11 @@
-package com.colmena.tramite_documentario.presentation.Controllers;
+package com.colmena.tramite_documentario.presentation.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.colmena.tramite_documentario.application.Services.OllamaAi.AiService;
+import com.colmena.tramite_documentario.infrastructure.services.OllamaAi.AiService;
 
 import lombok.RequiredArgsConstructor;
 

@@ -1,4 +1,4 @@
-package com.colmena.tramite_documentario.domain.Entities;
+package com.colmena.tramite_documentario.domain.entities;
 
 import java.util.Date;
 

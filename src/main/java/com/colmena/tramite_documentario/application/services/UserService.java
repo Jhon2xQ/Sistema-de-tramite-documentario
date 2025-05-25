@@ -1,11 +1,11 @@
-package com.colmena.tramite_documentario.application.Services;
+package com.colmena.tramite_documentario.application.services;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.colmena.tramite_documentario.domain.Entities.UsuarioEntity;
-import com.colmena.tramite_documentario.domain.Repositories.UsuarioRepository;
+import com.colmena.tramite_documentario.domain.entities.UsuarioEntity;
+import com.colmena.tramite_documentario.domain.repositories.UsuarioRepository;
 
 import lombok.RequiredArgsConstructor;
 
