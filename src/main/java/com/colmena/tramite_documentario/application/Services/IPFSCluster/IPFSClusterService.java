@@ -1,4 +1,4 @@
-package com.colmena.tramite_documentario.Services.IPFSCluster;
+package com.colmena.tramite_documentario.application.Services.IPFSCluster;
 
 import java.io.IOException;
 

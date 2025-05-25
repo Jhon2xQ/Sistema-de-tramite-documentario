@@ -1,4 +1,4 @@
-package com.colmena.tramite_documentario.Services;
+package com.colmena.tramite_documentario.application.Services;
 
 import java.util.Date;
 
@@ -6,9 +6,9 @@ import org.json.JSONObject;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.colmena.tramite_documentario.Entities.DocumentoEntity;
-import com.colmena.tramite_documentario.Repositories.DocumentoRepository;
-import com.colmena.tramite_documentario.Services.IPFSCluster.IPFSClusterService;
+import com.colmena.tramite_documentario.application.Services.IPFSCluster.IPFSClusterService;
+import com.colmena.tramite_documentario.domain.Entities.DocumentoEntity;
+import com.colmena.tramite_documentario.domain.Repositories.DocumentoRepository;
 
 import lombok.RequiredArgsConstructor;
 @Service
@@ -18,7 +18,7 @@ public class DocumentoService {
   private final DocumentoRepository documentoRepository;
   private final IPFSClusterService ipfsService;
   
-  public DocumentoEntity getDocumento(Long id) {
+  public DocumentoEntity getDocumento(String id) {
     return documentoRepository.findById(id).orElseThrow(() -> new RuntimeException("Documento no encontrado"));
   }
 

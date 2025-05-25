@@ -1,4 +1,4 @@
-package com.colmena.tramite_documentario.Entities;
+package com.colmena.tramite_documentario.domain.Entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
