@@ -1,4 +1,4 @@
-package com.colmena.tramite_documentario.delivery.Controllers;
+package com.colmena.tramite_documentario.presentation.Controllers;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
